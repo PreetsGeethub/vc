@@ -49,15 +49,15 @@ function HeroVideo() {
         if(t<=1.5){
             setShowLogo(true)
         }
-        else if (t < 6) {
-          setShowLogo(false)
-        }
+        // else if (t < 6) {
+        //   setShowLogo(false)
+        // }
         else if (t < 44) {
           setShowLogo(true)
         }
-        else if (t <= 54) {
-          setShowLogo(false)
-        }
+        // else if (t <= 54) {
+        //   setShowLogo(false)
+        // }
         else {
           setShowLogo(true)
         }
@@ -127,9 +127,9 @@ function HeroVideo() {
             
             {/* Main Content Section - Navbar and content */}
             <div id="main-section" className="relative z-10 bg-white">
-                <Navbar/>
+                {/* <Navbar/> */}
                 {/* Your content sections will go here */}
-                <MainSection/>
+                {/* <MainSection/> */}
             </div>
         </>
     )
