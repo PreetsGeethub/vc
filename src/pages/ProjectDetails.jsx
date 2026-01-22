@@ -20,7 +20,7 @@ function ProjectDetails() {
       {/* HERO IMAGE */}
       <section className="
         relative w-full overflow-hidden
-        h-[70vh] sm:h-[80vh] md:h-screen
+        sm:h-[70vh] md:h-[60vh]
       ">
 
         <img
@@ -34,7 +34,10 @@ function ProjectDetails() {
         />
 
       </section>
-
+      <div className="
+  absolute bottom-0 left-0 w-full h-24
+  bg-gradient-to-t from-white to-transparent
+"/>
       {/* CONTENT */}
       <section className="
         bg-white
