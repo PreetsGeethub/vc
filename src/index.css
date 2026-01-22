@@ -18,3 +18,75 @@
     transform: translateY(0);
   }
 }
+@keyframes cinematicFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+
+@keyframes zoomLoop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-card {
+  overflow: hidden;
+}
+
+.hover-img {
+  transform: scale(1);
+  transition: transform 0.8s ease;
+}
+
+.hover-card:hover .hover-img {
+  animation: zoomLoop 6s ease-in-out infinite;
+}
+
+
+
+
+/* mobile responsivenes */
+@keyframes fadeInSlow {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes slideUpSlow {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInSlow {
+  animation: fadeInSlow 0.7s ease forwards;
+}
+
+.animate-slideUpSlow {
+  animation: slideUpSlow 0.9s ease forwards;
+}
+
+/* delays */
+.delay-150 { animation-delay: .15s; }
+.delay-300 { animation-delay: .3s; }

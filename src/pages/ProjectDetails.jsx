@@ -2,13 +2,13 @@ import { useParams } from "react-router-dom"
 import { projects } from "../data/projects"
 import { useEffect } from "react"
 import Reveal from "../components/Reveal"
+import FadeWrapper from "../components/FadeWrapper"
 
 function ProjectDetails() {
 
   const { slug } = useParams()
   const project = projects.find(p => p.slug === slug)
 
-  // Always start from top
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -18,7 +18,10 @@ function ProjectDetails() {
   return (
     <>
       {/* HERO IMAGE */}
-      <section className="relative h-screen w-full overflow-hidden">
+      <section className="
+        relative w-full overflow-hidden
+        h-[70vh] sm:h-[80vh] md:h-screen
+      ">
 
         <img
           src={project.thumbnail}
@@ -33,39 +36,69 @@ function ProjectDetails() {
       </section>
 
       {/* CONTENT */}
-      <section className="bg-white px-16 py-20">
+      <section className="
+        bg-white
+        px-6 py-12
+
+        md:px-16 md:py-20
+      ">
 
         <Reveal>
-          <h1 className="text-3xl font-semibold">
+          <h1 className="
+            font-playfair 
+            text-3xl sm:text-4xl md:text-5xl
+          ">
             {project.title}
           </h1>
 
-          <p className="text-gray-500 mt-2">
+          <p className="
+            font-inter text-gray-500 
+            mt-2
+            text-sm sm:text-base
+          ">
             {project.subtitle}
           </p>
-          <p className="text-gray-500 mt-2">
+
+          <p className="
+            font-inter 
+            text-xs sm:text-sm
+          ">
             {project.location}
           </p>
         </Reveal>
 
         {/* GALLERY */}
-        <div className="grid grid-cols-2 gap-10 mt-20">
+        {/* GALLERY */}
+<div className="
+  grid grid-cols-1 
+  sm:grid-cols-2
+  gap-2 md:gap-4 
+  mt-12 md:mt-20
+">
 
-          {project.images.map((img, i) => (
-            <Reveal key={i}>
-              <img 
-                src={img}
-                alt=""
-                className="
-                  w-full object-cover
-                  hover:scale-[1.03]
-                  transition duration-[1500ms]
-                "
-              />
-            </Reveal>
-          ))}
+  {project.images.map((img, i) => (
 
-        </div>
+    <FadeWrapper key={i}>
+
+      <div className="w-full overflow-hidden">
+
+        <img
+          src={img}
+          alt=""
+          className="
+            w-full
+            h-auto
+            object-contain
+          "
+        />
+
+      </div>
+
+    </FadeWrapper>
+
+  ))}
+
+</div>
 
       </section>
     </>

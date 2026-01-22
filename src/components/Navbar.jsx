@@ -1,5 +1,6 @@
 import { NavLink, useLocation, useNavigate } from "react-router-dom"
 import { useEffect, useRef, useState } from "react"
+import MobileMenu from "./MobileMenu"
 
 function Navbar() {
 
@@ -12,6 +13,7 @@ function Navbar() {
 
   const [sticky, setSticky] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   // Marker observer (MiCasa behavior)
   useEffect(() => {
@@ -43,6 +45,8 @@ function Navbar() {
 
   // Portfolio click
   const handlePortfolioClick = () => {
+    setMobileOpen(false)
+
     if (location.pathname !== "/") {
       navigate("/")
       setTimeout(() => {
@@ -68,7 +72,7 @@ function Navbar() {
       <nav
         ref={navRef}
         className={`
-          w-full px-16 py-6
+          w-full px-6 md:px-16 py-6
           flex justify-between items-center
           transition-all duration-500 z-[999]
 
@@ -91,12 +95,12 @@ function Navbar() {
         {/* LOGO */}
         <img
           src="/VR_logo_Full_Inverted.png"
-          className="w-36 cursor-pointer"
+          className="w-28 md:w-36 cursor-pointer"
           onClick={handlePortfolioClick}
         />
 
-        {/* LINKS */}
-        <ul className="flex gap-12 text-sm font-medium">
+        {/* DESKTOP LINKS */}
+        <ul className="hidden md:flex gap-12 text-sm font-medium">
 
           <NavLink
             to="/"
@@ -126,7 +130,25 @@ function Navbar() {
           </NavLink>
 
         </ul>
+
+        {/* HAMBURGER */}
+        <button
+          onClick={() => setMobileOpen(true)}
+          className="md:hidden flex flex-col gap-1"
+        >
+          <span className="w-6 h-[2px] bg-current"></span>
+          <span className="w-6 h-[2px] bg-current"></span>
+          <span className="w-6 h-[2px] bg-current"></span>
+        </button>
       </nav>
+
+      {/* MOBILE MENU */}
+      {mobileOpen && (
+        <MobileMenu
+          onClose={() => setMobileOpen(false)}
+          handlePortfolioClick={handlePortfolioClick}
+        />
+      )}
     </>
   )
 }

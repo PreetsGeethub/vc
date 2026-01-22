@@ -100,12 +100,20 @@ function HeroVideo() {
 
                 {/* Logo */}
                 <img
-                    src="./VR_logo_Full.png"
-                    alt="virtucasa"
-                    className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 w-82
-                        transition-opacity duration-1000
-                        ${showLogo ? "opacity-100" : "opacity-0"}`}
-                />
+  src="./VR_logo_Full.png"
+  alt="virtucasa"
+  className={`
+    absolute top-1/2 left-1/2 
+    -translate-x-1/2 -translate-y-1/2 
+    z-40 w-82
+
+    transition-opacity duration-1000
+    ${showLogo ? "opacity-100" : "opacity-0"}
+
+    ${phase === "intro" ? "animate-[cinematicFade_2s_ease-out]" : ""}
+  `}
+/>
+
                 
                 {/* Scroll Down Arrow */}
                 <button

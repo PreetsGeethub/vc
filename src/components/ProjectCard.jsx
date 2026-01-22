@@ -1,44 +1,69 @@
-import React from 'react'
+import { useRef } from "react"
 
-function ProjectCard({ 
-  title, 
-  subtitle, 
-  image, 
-  className = "" 
+function ProjectCard({
+  title,
+  subtitle,
+  thumbnail
 }) {
+
+  const imgRef = useRef(null)
+
+  const handleMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect()
+
+    const x = e.clientX - rect.left
+    const y = e.clientY - rect.top
+
+    const moveX = (x / rect.width - 0.5) * 20
+    const moveY = (y / rect.height - 0.5) * 20
+
+    imgRef.current.style.transform =
+      `translate(${moveX}px, ${moveY}px) scale(1.05)`
+  }
+
+  const reset = () => {
+    imgRef.current.style.transform =
+      "translate(0,0) scale(1)"
+  }
+
   return (
-    <div 
-      className={`relative overflow-hidden cursor-pointer group ${className}`}
+    <div
+      onMouseMove={handleMove}
+      onMouseLeave={reset}
+      className="relative w-full h-[420px] overflow-hidden group"
     >
 
-      {/* Image */}
+      {/* IMAGE */}
       <img
-        src={image}
+        ref={imgRef}
+        src={thumbnail}
         alt={title}
         className="
-          w-full h-72 object-cover
-          transition-transform duration-700 ease-in-out
-          group-hover:scale-105
+          w-full h-full object-cover
+          transition-transform duration-500 ease-out
         "
       />
 
-      {/* Text overlay */}
+      {/* OVERLAY */}
       <div
         className="
           absolute inset-0 flex flex-col 
           items-center justify-center
-          bg-black/30
-          text-white
+          bg-black/30 text-white
           transition-opacity duration-500
           group-hover:opacity-0
         "
       >
-        <h3 className="text-xl font-medium">{title}</h3>
-        <p className="text-sm tracking-wide">{subtitle}</p>
+        <h2 className="font-playfair text-2xl">
+          {title}
+        </h2>
+        <p className="font-inter text-sm">
+          {subtitle}
+        </p>
       </div>
+
     </div>
   )
 }
 
 export default ProjectCard
-

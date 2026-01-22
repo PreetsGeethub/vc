@@ -9,10 +9,10 @@ export const projects = [
     thumbnail: "/projects/Villa/one.png",  // for card
 
     images: [
-      "/projects/Villa/one.png",
-      "/projects/Villa/two.png",
+
       "/projects/Villa/three.png",
-      "/projects/Villa/four.png"
+      "/projects/Villa/four.png",
+      "/projects/Villa/one.png",
     ]
   },
   {
@@ -53,7 +53,7 @@ export const projects = [
     id: 4,
     title: "Elevation Modern",
     slug: "ElevationModern",
-    subtitle: "Modern",
+    subtitle: "Modern Design",
     location:"jaipur",
     thumbnail: "/projects/ElevationModern/House Elevation_8 processed.png",  // for card
     images: [
@@ -64,8 +64,8 @@ export const projects = [
   {
     id: 5,
     title: "Elevation",
-    slug: "ElevationModern",
-    subtitle: "Non Classic",
+    slug: "ElevationNC",
+    subtitle: "Neo Classical",
     location:"jaipur",
     thumbnail: "/projects/ElevationNC/Elevation 2 Final_processed.png",  // for card
     images: [
@@ -76,7 +76,7 @@ export const projects = [
     id: 6,
     title: "Doctors Residence",
     slug: "DoctorsResd2",
-    subtitle: "Non Classic",
+    subtitle: "Neo Classical",
     location:"jaipur",
     thumbnail: "/projects/DoctorsResd2/Dining area.png",  // for card
     images: [
