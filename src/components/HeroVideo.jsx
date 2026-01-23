@@ -86,15 +86,19 @@ function HeroVideo() {
                 {/* Video */}
                 <video
   ref={videoRef}
+  muted
+  playsInline
+  preload="metadata"
   className={`
     absolute inset-0 w-full h-full object-cover
     transition-opacity duration-1000
     ${phase === "play" ? "opacity-100" : "opacity-0"}
   `}
-  muted
-  playsInline
-  autoPlay
-  preload="metadata"
+  onCanPlay={() => {
+    if (phase === "play") {
+      videoRef.current?.play()
+    }
+  }}
   onEnded={() => setPhase("outro")}
   onTimeUpdate={handleTimeUpdate}
 >
