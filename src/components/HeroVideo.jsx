@@ -86,18 +86,21 @@ function HeroVideo() {
                 {/* Video */}
                 <video
   ref={videoRef}
-  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000
-    ${phase === "play" ? "opacity-100" : "opacity-0"}`}
+  className={`
+    absolute inset-0 w-full h-full object-cover
+    transition-opacity duration-1000
+    ${phase === "play" ? "opacity-100" : "opacity-0"}
+  `}
   muted
   playsInline
-  preload="auto"
+  autoPlay
+  preload="metadata"
   onEnded={() => setPhase("outro")}
   onTimeUpdate={handleTimeUpdate}
 >
-
-  <source src="/S3-.mp4" type="video/mp4" />
-
+  <source src="/hero.mp4" type="video/mp4" />
 </video>
+
 
 
                 {/* Dark overlay on video */}
