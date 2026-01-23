@@ -89,18 +89,11 @@ function HeroVideo() {
   muted
   playsInline
   preload="metadata"
-  className={`
-    absolute inset-0 w-full h-full object-cover
-    transition-opacity duration-1000
-    ${phase === "play" ? "opacity-100" : "opacity-0"}
-  `}
-  onCanPlay={() => {
-    if (phase === "play") {
-      videoRef.current?.play()
-    }
+  className="absolute inset-0 w-full h-full object-cover z-10"
+  onLoadedData={() => {
+    console.log("VIDEO LOADED");
+    videoRef.current?.play();
   }}
-  onEnded={() => setPhase("outro")}
-  onTimeUpdate={handleTimeUpdate}
 >
   <source src="/hero.mp4" type="video/mp4" />
 </video>
