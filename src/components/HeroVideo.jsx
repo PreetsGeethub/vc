@@ -63,15 +63,15 @@ function HeroVideo() {
         }
     }
 
-    useEffect(() => {
-        if (!videoRef.current) return
+    // useEffect(() => {
+    //     if (!videoRef.current) return
       
-        if (phase === "play") {
-          videoRef.current.play()
-        } else {
-          videoRef.current.pause()
-        }
-    }, [phase])
+    //     if (phase === "play") {
+    //       videoRef.current.play()
+    //     } else {
+    //       videoRef.current.pause()
+    //     }
+    // }, [phase])
 
     return (
         <>
@@ -101,7 +101,11 @@ function HeroVideo() {
   <source src="/hero.mp4" type="video/mp4" />
 </video> */}
 <video
-  className="absolute inset-0 w-full h-full object-cover"
+  className={`
+    absolute inset-0 w-full h-full object-cover
+    transition-opacity duration-1000
+    ${phase === "play" ? "opacity-100" : "opacity-0"}
+  `}
   autoPlay
   muted
   playsInline
@@ -110,6 +114,7 @@ function HeroVideo() {
 >
   <source src="/hero.mp4" type="video/mp4" />
 </video>
+
 
 
 
