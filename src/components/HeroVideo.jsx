@@ -101,14 +101,15 @@ function HeroVideo() {
   <source src="/hero.mp4" type="video/mp4" />
 </video> */}
 <video
-  src="/hero.mp4"
+  className="absolute inset-0 w-full h-full object-cover"
+  autoPlay
   muted
   playsInline
-  autoPlay
   loop
-  controls
-  className="w-full h-screen object-cover"
-></video>
+  preload="auto"
+>
+  <source src="/hero.mp4" type="video/mp4" />
+</video>
 
 
 
