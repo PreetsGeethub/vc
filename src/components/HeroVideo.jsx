@@ -84,19 +84,31 @@ function HeroVideo() {
                 />
 
                 {/* Video */}
-                <video
+                {/* <video
   ref={videoRef}
+  className={`
+    absolute inset-0 w-full h-full object-cover
+    transition-opacity duration-1000
+    ${phase === "play" ? "opacity-100" : "opacity-0"}
+  `}
   muted
   playsInline
+  autoPlay
   preload="metadata"
-  className="absolute inset-0 w-full h-full object-cover z-10"
-  onLoadedData={() => {
-    console.log("VIDEO LOADED");
-    videoRef.current?.play();
-  }}
+  onEnded={() => setPhase("outro")}
+  onTimeUpdate={handleTimeUpdate}
 >
   <source src="/hero.mp4" type="video/mp4" />
-</video>
+</video> */}
+<video
+  src="/hero.mp4"
+  muted
+  playsInline
+  autoPlay
+  loop
+  controls
+  className="w-full h-screen object-cover"
+></video>
 
 
 
