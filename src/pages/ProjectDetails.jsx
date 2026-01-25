@@ -18,90 +18,100 @@ function ProjectDetails() {
   return (
     <>
       {/* HERO IMAGE */}
-      <section className="
-        relative w-full overflow-hidden
-        sm:h-[70vh] md:h-[60vh]
-      ">
-
+      <section
+        className="
+          relative w-full overflow-hidden
+          h-[50vh]
+          sm:h-[70vh]
+          md:h-[60vh]
+        "
+      >
         <img
           src={project.thumbnail}
+          alt={project.title}
           className="
             absolute inset-0 w-full h-full object-cover
             scale-110 hover:scale-100
             transition-transform duration-[3000ms] ease-in-out
           "
-          alt={project.title}
         />
 
+        {/* GRADIENT OVERLAY */}
+        <div
+          className="
+            absolute bottom-0 left-0 w-full h-11
+            bg-gradient-to-t from-white to-transparent
+          "
+        />
       </section>
-      <div className="
-  absolute bottom-0 left-0 w-full h-24
-  bg-gradient-to-t from-white to-transparent
-"/>
+
       {/* CONTENT */}
-      <section className="
-        bg-white
-        px-6 py-12
-
-        md:px-16 md:py-20
-      ">
-
+      <section
+        className="
+          bg-white
+          px-6 py-12
+          md:px-16 md:py-20
+        "
+      >
         <Reveal>
-          <h1 className="
-            font-playfair 
-            text-3xl sm:text-4xl md:text-5xl
-          ">
+          <h1
+            className="
+              font-playfair 
+              text-3xl sm:text-4xl md:text-5xl
+            "
+          >
             {project.title}
           </h1>
 
-          <p className="
-            font-inter text-gray-500 
-            mt-2
-            text-sm sm:text-base
-          ">
+          <p
+            className="
+              font-inter text-gray-500 
+              mt-2
+              text-sm sm:text-base
+            "
+          >
             {project.subtitle}
           </p>
 
-          <p className="
-            font-inter 
-            text-xs sm:text-sm
-          ">
+          <p
+            className="
+              font-inter 
+              text-xs sm:text-sm
+            "
+          >
             {project.location}
           </p>
         </Reveal>
 
         {/* GALLERY */}
         {/* GALLERY */}
-<div className="
-  grid grid-cols-1 
-  sm:grid-cols-2
-  gap-2 md:gap-4 
-  mt-12 md:mt-20
-">
-
-  {project.images.map((img, i) => (
-
-    <FadeWrapper key={i}>
-
-      <div className="w-full overflow-hidden">
-
-        <img
-          src={img}
-          alt=""
+        <div
           className="
+    grid grid-cols-1
+    sm:grid-cols-2
+    gap-2 md:gap-4
+    mt-12 md:mt-20
+  "
+        >
+          {project.images.map((img, i) => (
+            <FadeWrapper key={i}>
+              <div className="hover-card w-full">
+                <img
+                  src={img}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  className="
+            hover-img
             w-full
             h-auto
             object-contain
           "
-        />
-
-      </div>
-
-    </FadeWrapper>
-
-  ))}
-
-</div>
+                />
+              </div>
+            </FadeWrapper>
+          ))}
+        </div>
 
       </section>
     </>

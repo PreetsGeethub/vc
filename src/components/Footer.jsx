@@ -42,11 +42,11 @@ function Footer() {
             </h4>
   
             <p className="text-gray-400 text-sm">
-              hello@virtucasa.com
+              virtucasajpr@gmail.com
             </p>
   
             <p className="text-gray-400 text-sm">
-              +91 98765 43210
+              +91 911193 79443
             </p>
   
             <p className="text-gray-400 text-sm">
@@ -65,7 +65,7 @@ function Footer() {
             <div className="flex gap-5">
   
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/virtucasajpr/"
                 target="_blank"
                 className="hover:opacity-70 transition"
               >
@@ -76,7 +76,7 @@ function Footer() {
               </a>
   
               <a
-                href="https://facebook.com"
+                href="https://facebook.com/profile.php?id=61584039237933"
                 target="_blank"
                 className="hover:opacity-70 transition"
               >

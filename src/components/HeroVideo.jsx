@@ -1,149 +1,105 @@
-import React, { useEffect, useState, useRef } from 'react'
-import Navbar from './Navbar';
-import MainSection from './MainSection';
+import { useEffect, useState, useRef } from 'react'
 
 function HeroVideo() {
     const [showLogo, setShowLogo] = useState(true)
-    const [phase, setPhase] = useState("intro");
-    const videoRef = useRef(null);
+    const [phase, setPhase] = useState("intro")
+    const videoRef = useRef(null)
 
     useEffect(() => {
         // Complete body/html reset
-        document.body.style.margin = '0';
-        document.body.style.padding = '0';
-        document.body.style.overflow = 'auto';
-        document.documentElement.style.margin = '0';
-        document.documentElement.style.padding = '0';
-        document.documentElement.style.overflow = 'auto';
+        document.body.style.margin = '0'
+        document.body.style.padding = '0'
+        document.body.style.overflow = 'auto'
+        document.documentElement.style.margin = '0'
+        document.documentElement.style.padding = '0'
+        document.documentElement.style.overflow = 'auto'
         
-        // Remove any default spacing from root
-        const root = document.getElementById('root');
+        const root = document.getElementById('root')
         if (root) {
-            root.style.margin = '0';
-            root.style.padding = '0';
+            root.style.margin = '0'
+            root.style.padding = '0'
         }
 
-        let timer;
+        // Intro animation timing
+        let timer
         if (phase === "intro") {
-            timer = setTimeout(() => setPhase("play"), 2000);
-        }
-        if (phase === "outro") {
-            timer = setTimeout(() => {
-                setPhase("play");
-            }, 2000);
+            timer = setTimeout(() => setPhase("play"), 2000)
         }
 
-        return () => clearTimeout(timer);
-    }, [phase]);
+        return () => clearTimeout(timer)
+    }, [phase])
 
+    // Optional: Control logo visibility based on video time
     const handleTimeUpdate = () => {
-        if (!videoRef.current) return
-      
-        if (phase !== "play") {
-          setShowLogo(true)
-          return
-        }
-      
+        if (!videoRef.current || phase !== "play") return
+        
         const t = videoRef.current.currentTime
-      
-        if(t<=1.5){
+        
+        // Customize these timings based on your video
+        if (t <= 1.5) {
             setShowLogo(true)
-        }
-        // else if (t < 6) {
-        //   setShowLogo(false)
-        // }
-        else if (t < 44) {
-          setShowLogo(true)
-        }
-        // else if (t <= 54) {
-        //   setShowLogo(false)
-        // }
-        else {
-          setShowLogo(true)
+        } else if (t < 44) {
+            setShowLogo(true)  // Change to false if you want logo to hide
+        } else {
+            setShowLogo(true)
         }
     }
 
-    // useEffect(() => {
-    //     if (!videoRef.current) return
-      
-    //     if (phase === "play") {
-    //       videoRef.current.play()
-    //     } else {
-    //       videoRef.current.pause()
-    //     }
-    // }, [phase])
-
     return (
         <>
-            {/* Hero Section - Takes up full viewport, scrolls away */}
+            {/* Hero Section - Full viewport */}
             <div className="relative w-full h-screen overflow-hidden">
-                {/* Black screen */}
+                
+                {/* Black screen intro */}
                 <div
-                    className={`absolute inset-0 bg-black z-20 transition-opacity duration-1000
-                    ${phase === "play" ? "opacity-0 pointer-events-none" : "opacity-100"}`}
+                    className={`
+                        absolute inset-0 bg-black z-20 
+                        transition-opacity duration-1000
+                        ${phase === "play" ? "opacity-0 pointer-events-none" : "opacity-100"}
+                    `}
                 />
 
-                {/* Video */}
-                {/* <video
-  ref={videoRef}
-  className={`
-    absolute inset-0 w-full h-full object-cover
-    transition-opacity duration-1000
-    ${phase === "play" ? "opacity-100" : "opacity-0"}
-  `}
-  muted
-  playsInline
-  autoPlay
-  preload="metadata"
-  onEnded={() => setPhase("outro")}
-  onTimeUpdate={handleTimeUpdate}
->
-  <source src="/hero.mp4" type="video/mp4" />
-</video> */}
-<video
-  className={`
-    absolute inset-0 w-full h-full object-cover
-    transition-opacity duration-1000
-    ${phase === "play" ? "opacity-100" : "opacity-0"}
-  `}
-  autoPlay
-  muted
-  playsInline
-  loop
-  preload="auto"
->
-  <source src="/hero.mp4" type="video/mp4" />
-</video>
-
-
-
+                {/* Video Background */}
+                <video
+                    ref={videoRef}
+                    className={`
+                        absolute inset-0 w-full h-full object-cover
+                        transition-opacity duration-1000
+                        ${phase === "play" ? "opacity-100" : "opacity-0"}
+                    `}
+                    autoPlay
+                    muted
+                    playsInline
+                    loop
+                    preload="auto"
+                    onTimeUpdate={handleTimeUpdate}
+                >
+                    <source src="/hero.mp4" type="video/mp4" />
+                </video>
 
                 {/* Dark overlay on video */}
-                <div className="absolute inset-0 bg-black/80 z-10"></div>
+                <div className="absolute inset-0 bg-black/80 z-10" />
 
                 {/* Logo */}
                 <img
-  src="./VR_logo_Full.png"
-  alt="virtucasa"
-  className={`
-    absolute top-1/2 left-1/2 
-    -translate-x-1/2 -translate-y-1/2 
-    z-40 w-82
-
-    transition-opacity duration-1000
-    ${showLogo ? "opacity-100" : "opacity-0"}
-
-    ${phase === "intro" ? "animate-[cinematicFade_2s_ease-out]" : ""}
-  `}
-/>
-
+                    src="./VR_logo_Full.png"
+                    alt="virtucasa"
+                    className={`
+                        absolute top-1/2 left-1/2 
+                        -translate-x-1/2 -translate-y-1/2 
+                        z-40 w-82
+                        transition-opacity duration-1000
+                        ${showLogo ? "opacity-100" : "opacity-0"}
+                        ${phase === "intro" ? "animate-[cinematicFade_2s_ease-out]" : ""}
+                    `}
+                />
                 
                 {/* Scroll Down Arrow */}
                 <button
                     onClick={() => {
                         document.getElementById('main-section')?.scrollIntoView({
                             behavior: 'smooth'
-                        });
+                        })
                     }}
                     className="absolute bottom-12 left-1/2 -translate-x-1/2 z-30 group cursor-pointer"
                     aria-label="Scroll to content"
@@ -156,12 +112,8 @@ function HeroVideo() {
                 </button>
             </div>
             
-            {/* Main Content Section - Navbar and content */}
-            <div id="main-section" className="relative z-10 bg-white">
-                {/* <Navbar/> */}
-                {/* Your content sections will go here */}
-                {/* <MainSection/> */}
-            </div>
+            {/* Main Content Section */}
+            <div id="main-section" className="relative z-10 bg-white" />
         </>
     )
 }

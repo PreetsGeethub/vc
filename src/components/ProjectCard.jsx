@@ -38,6 +38,7 @@ function ProjectCard({
         ref={imgRef}
         src={thumbnail}
         alt={title}
+        loading="lazy"
         className="
           w-full h-full object-cover
           transition-transform duration-500 ease-out
