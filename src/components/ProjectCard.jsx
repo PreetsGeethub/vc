@@ -55,10 +55,13 @@ function ProjectCard({
           group-hover:opacity-0
         "
       >
-        <h2 className="font-playfair text-2xl">
+        <h2 className="font-playfair text-2xl
+  text-center
+  leading-tight
+  max-w-[80%]">
           {title}
         </h2>
-        <p className="font-inter text-sm">
+        <p className="font-inter text-sm text-center">
           {subtitle}
         </p>
       </div>

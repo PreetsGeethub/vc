@@ -13,11 +13,14 @@ export const projects = [
       "/projects/Villa/three.png",
       "/projects/Villa/four.png",
       "/projects/Villa/one.png",
+      "/projects/Villa/two.png",
+      "/projects/Villa/three.png",
+      "/projects/Villa/four.png",
     ]
   },
   {
     id: 2,
-    title: "Platinum",
+    title: "Platinum Greens",
     slug: "Platinum",
     subtitle: "Modern Design",
     location:"jaipur",
@@ -34,9 +37,9 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Doctors Resdidence Bedroom",
+    title: "Doctors Residence Bedroom",
     slug: "DoctorsResd",
-    subtitle: "Neo Classical",
+    subtitle: "Neo Classical Design",
     location:"jaipur",
     thumbnail: "/projects/DoctorsResd/Bed Wall.png",  // for card
 

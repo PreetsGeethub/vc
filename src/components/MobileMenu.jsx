@@ -1,10 +1,17 @@
-import { useLocation } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 
 function MobileMenu({ onClose, handlePortfolioClick }) {
-
   const location = useLocation()
+  const navigate = useNavigate()
+
   const isPortfolio = location.pathname === "/"
   const isAbout = location.pathname === "/about"
+
+  const handleAboutClick = () => {
+    navigate("/about")
+    window.scrollTo(0, 0) // always open from top
+    onClose()
+  }
 
   return (
     <div
@@ -15,29 +22,27 @@ function MobileMenu({ onClose, handlePortfolioClick }) {
         animate-fadeInSlow
       "
     >
-
       {/* TOP BAR */}
       <div className="flex justify-between items-center">
-
-        {/* LOGO */}
         <img
           src="/VR_logo_Full_Inverted.png"
-          className="w-28"
+          className="w-28 cursor-pointer"
+          onClick={() => {
+            handlePortfolioClick()
+            onClose()
+          }}
         />
 
-        {/* CLOSE */}
         <button
           onClick={onClose}
           className="text-2xl"
         >
           ✕
         </button>
-
       </div>
 
       {/* CENTER NAV */}
       <div className="flex-1 flex items-center justify-center">
-
         <ul className="space-y-10 text-3xl font-medium text-center">
 
           <li
@@ -47,6 +52,7 @@ function MobileMenu({ onClose, handlePortfolioClick }) {
             }}
             className={`
               animate-slideUpSlow
+              cursor-pointer
               ${isPortfolio ? "text-black" : "text-gray-400"}
             `}
           >
@@ -54,9 +60,10 @@ function MobileMenu({ onClose, handlePortfolioClick }) {
           </li>
 
           <li
-            onClick={onClose}
+            onClick={handleAboutClick}
             className={`
               animate-slideUpSlow delay-150
+              cursor-pointer
               ${isAbout ? "text-black" : "text-gray-400"}
             `}
           >
@@ -64,7 +71,6 @@ function MobileMenu({ onClose, handlePortfolioClick }) {
           </li>
 
         </ul>
-
       </div>
 
       {/* BOTTOM CONTACT */}
@@ -79,7 +85,6 @@ function MobileMenu({ onClose, handlePortfolioClick }) {
         <p>+91 9876543210</p>
         <p>Jaipur, India</p>
       </div>
-
     </div>
   )
 }

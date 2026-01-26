@@ -3,6 +3,8 @@ import { projects } from "../data/projects"
 import { useEffect } from "react"
 import Reveal from "../components/Reveal"
 import FadeWrapper from "../components/FadeWrapper"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 function ProjectDetails() {
 
@@ -17,6 +19,7 @@ function ProjectDetails() {
 
   return (
     <>
+    <Navbar/>
       {/* HERO IMAGE */}
       <section
         className="
@@ -39,7 +42,7 @@ function ProjectDetails() {
         {/* GRADIENT OVERLAY */}
         <div
           className="
-            absolute bottom-0 left-0 w-full h-11
+            absolute bottom-0 left-0 w-full h-7
             bg-gradient-to-t from-white to-transparent
           "
         />
@@ -114,6 +117,7 @@ function ProjectDetails() {
         </div>
 
       </section>
+      <Footer/>
     </>
   )
 }

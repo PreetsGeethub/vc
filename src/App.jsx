@@ -1,26 +1,15 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import ProjectDetails from "./pages/ProjectDetails"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
+import About from "./pages/About"
+
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-
-      {/* Project page layout */}
-      <Route 
-        path="/project/:slug" 
-        element={
-          <>
-            <Navbar overlay />   {/* 👈 overlay mode */}
-            <ProjectDetails />
-            <Footer />   {/* ALWAYS at bottom */}
-          </>
-        } 
-      />
+      <Route path="/project/:slug" element={<ProjectDetails />} />
+      <Route path="/about" element={<About />} />
     </Routes>
-    
   )
 }
 

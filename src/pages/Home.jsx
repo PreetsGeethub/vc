@@ -2,6 +2,7 @@ import HeroVideo from "../components/HeroVideo"
 import Navbar from "../components/Navbar"
 import MainSection from "../components/MainSection"
 import Footer from "../components/Footer"
+
 function Home() {
   return (
     <>
@@ -11,7 +12,7 @@ function Home() {
       <Navbar />
 
       <MainSection />
-      <Footer />   {/* ALWAYS at bottom */}
+      <Footer />
     </>
   )
 }
