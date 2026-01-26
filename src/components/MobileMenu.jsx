@@ -81,8 +81,8 @@ function MobileMenu({ onClose, handlePortfolioClick }) {
           animate-slideUpSlow delay-300
         "
       >
-        <p>hello@virtucasa.com</p>
-        <p>+91 9876543210</p>
+        <p>virtucasajpr@gmail.com</p>
+        <p>+91 911193 79443</p>
         <p>Jaipur, India</p>
       </div>
     </div>
