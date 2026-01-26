@@ -14,8 +14,8 @@ export const projects = [
       "/projects/Villa/four.png",
       "/projects/Villa/one.png",
       "/projects/Villa/two.png",
-      "/projects/Villa/three.png",
-      "/projects/Villa/four.png",
+      "/projects/Villa/five.png",
+      "/projects/Villa/six.png",
     ]
   },
   {
@@ -50,6 +50,7 @@ export const projects = [
       "/projects/DoctorsResd/Tilted view 21.png",
       "/projects/DoctorsResd/Tilted view.png",
       "/projects/DoctorsResd/Tilted view1.png",
+      "/projects/DoctorsResd/TV wall.png",
     ]
   },
   {

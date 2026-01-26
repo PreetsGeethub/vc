@@ -87,7 +87,7 @@ function Footer() {
               </a>
   
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/virtu-casa-1398a0396/"
                 target="_blank"
                 className="hover:opacity-70 transition"
               >
@@ -97,7 +97,7 @@ function Footer() {
                 />
               </a>
   
-              <a
+              {/* <a
                 href="https://youtube.com"
                 target="_blank"
                 className="hover:opacity-70 transition"
@@ -106,7 +106,7 @@ function Footer() {
                   src="/icons/twitter.svg"
                   className="w-5"
                 />
-              </a>
+              </a> */}
   
             </div>
   
