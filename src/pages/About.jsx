@@ -8,6 +8,10 @@ function About() {
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
+      useEffect(() => {
+        document.title = "About Us | VirtuCasa"
+      }, [])
+      
   return (
     <>
       <Navbar />

@@ -14,6 +14,12 @@ function ProjectDetails() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+  useEffect(() => {
+    if (project) {
+      document.title = `${project.title} | VirtuCasa`
+    }
+  }, [project])
+  
 
   if (!project) return <h1>Not found</h1>
 
