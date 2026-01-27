@@ -1,3 +1,5 @@
+import { Link,NavLink } from "react-router-dom"
+
 function Footer() {
     return (
       <footer
@@ -124,7 +126,44 @@ function Footer() {
         >
           © {new Date().getFullYear()} Virtucasa. All rights reserved.
         </div>
-  
+                
+
+        <ul className="
+  flex flex-wrap justify-center
+  gap-x-6 gap-y-2
+  text-[11px] text-gray-400
+  mt-2
+">
+  <li>
+    <Link
+      to="/about"
+      className="hover:text-gray-600 hover:underline transition"
+    >
+      About VirtuCasa
+    </Link>
+  </li>
+
+  <li>
+    <Link
+      to="/project/villa"
+      className="hover:text-gray-600 hover:underline transition"
+    >
+      Villa – Interior Project
+    </Link>
+  </li>
+
+  <li>
+    <Link
+      to="/project/platinum"
+      className="hover:text-gray-600 hover:underline transition"
+    >
+      Platinum Residence
+    </Link>
+  </li>
+</ul>
+
+
+
       </footer>
     )
   }
