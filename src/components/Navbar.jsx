@@ -3,9 +3,8 @@ import { useEffect, useRef, useState } from "react"
 import MobileMenu from "./MobileMenu"
 
 function Navbar() {
-
-  const navRef = useRef(null)
   const markerRef = useRef(null)
+  const navRef = useRef(null)
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -14,36 +13,49 @@ function Navbar() {
   const [sticky, setSticky] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [navHeight, setNavHeight] = useState(88)
 
-  // Marker observer (MiCasa behavior)
+  /* ---------------- MEASURE NAV HEIGHT ---------------- */
   useEffect(() => {
+    if (navRef.current) {
+      const height = navRef.current.getBoundingClientRect().height
+      setNavHeight(height)
+    }
+  }, [])
+
+  /* ---------------- DESKTOP STICKY (AFTER HERO) ---------------- */
+  useEffect(() => {
+    if (isProject) return
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         setSticky(!entry.isIntersecting)
       },
-      { threshold: 0 }
+      {
+        root: null,
+        rootMargin: `-1px 0px 0px 0px`,
+        threshold: 0,
+      }
     )
 
-    if (markerRef.current) {
-      observer.observe(markerRef.current)
-    }
-
+    if (markerRef.current) observer.observe(markerRef.current)
     return () => observer.disconnect()
-  }, [])
-
-  // Scroll detect (for project transparent navbar)
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 80)
-    }
-
-    if (isProject) {
-      window.addEventListener("scroll", handleScroll)
-      return () => window.removeEventListener("scroll", handleScroll)
-    }
   }, [isProject])
 
-  // Portfolio click
+  /* ---------------- PROJECT PAGE TRANSPARENCY ---------------- */
+  useEffect(() => {
+    if (!isProject) return
+
+    const onScroll = () => {
+      setScrolled(window.scrollY > 80)
+    }
+    
+    onScroll()
+    window.addEventListener("scroll", onScroll, { passive: true })
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [isProject])
+
+  /* ---------------- PORTFOLIO CLICK ---------------- */
   const handlePortfolioClick = () => {
     setMobileOpen(false)
 
@@ -63,54 +75,57 @@ function Navbar() {
 
   return (
     <>
-      {/* Marker */}
-      {!isProject && <div ref={markerRef} className="h-[1px]" />}
+      {/* Marker - triggers sticky behavior */}
+      {!isProject && <div ref={markerRef} style={{ height: '1px', marginTop: '-1px' }} />}
 
-      {/* Spacer */}
-      {sticky && !isProject && <div className="h-[88px]" />}
+      {/* Spacer - uses actual measured height */}
+      {sticky && !isProject && (
+        <div style={{ height: `${navHeight}px` }} />
+      )}
 
       <nav
         ref={navRef}
         className={`
           w-full px-6 md:px-16 py-6
           flex justify-between items-center
-          transition-all duration-500 z-[999]
+          z-[999]
+          transform-gpu
 
           ${
             isProject
               ? `
                 fixed top-0 left-0
-                ${!scrolled 
-                  ? "bg-transparent text-white" 
-                  : "bg-white text-black shadow"}
+                transition-all duration-200 ease-out
+                ${
+                  !scrolled
+                    ? "bg-transparent text-white"
+                    : "bg-white text-black shadow-lg"
+                }
               `
               : `
                 bg-white border-b
-                ${sticky ? "fixed top-0 shadow" : "relative"}
+                ${sticky ? "fixed top-0 left-0 shadow-lg" : "relative"}
               `
           }
         `}
       >
-
         {/* LOGO */}
         <img
           src="/VR_logo_Full_Inverted.png"
+          alt="VirtuCasa"
           className="w-28 md:w-36 cursor-pointer"
           onClick={handlePortfolioClick}
         />
 
         {/* DESKTOP LINKS */}
         <ul className="hidden md:flex gap-12 text-sm font-medium">
-
           <NavLink
             to="/"
             onClick={handlePortfolioClick}
             className={({ isActive }) =>
-              `transition ${
-                isActive
-                  ? "text-black"
-                  : "text-gray-400 hover:text-black"
-              }`
+              isActive
+                ? "text-black"
+                : "text-gray-400 hover:text-black transition-colors"
             }
           >
             Portfolio
@@ -119,19 +134,16 @@ function Navbar() {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `transition ${
-                isActive
-                  ? "text-black"
-                  : "text-gray-400 hover:text-black"
-              }`
+              isActive
+                ? "text-black"
+                : "text-gray-400 hover:text-black transition-colors"
             }
           >
             About Us
           </NavLink>
-
         </ul>
 
-        {/* HAMBURGER */}
+        {/* MOBILE HAMBURGER */}
         <button
           onClick={() => setMobileOpen(true)}
           className="md:hidden flex flex-col gap-1"

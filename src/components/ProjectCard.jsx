@@ -30,7 +30,12 @@ function ProjectCard({
     <div
       onMouseMove={handleMove}
       onMouseLeave={reset}
-      className="relative w-full h-[420px] overflow-hidden group"
+      className="
+        relative w-full 
+        h-[280px]           /* mobile: rectangular */
+        md:h-[420px]        /* desktop: original tall */
+        overflow-hidden group
+      "
     >
 
       {/* IMAGE */}

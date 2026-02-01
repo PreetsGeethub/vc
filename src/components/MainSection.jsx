@@ -7,16 +7,20 @@ function MainSection() {
     <section
       className="
         bg-[rgb(244,245,245)]
-        space-y-4
-
-        px-6 py-10          /* mobile */
-        md:px-16 md:py-20   /* desktop */
+        
+        /* Mobile: no padding, tight grid */
+        space-y-2
+        
+        /* Desktop: spacious */
+        md:space-y-4
+        md:px-16 md:py-20
       "
     >
 
       {/* ROW 1 */}
       <div className="
-        grid gap-3
+        grid
+        gap-2 md:gap-3
         grid-cols-1
         md:grid-cols-2
       ">
@@ -34,7 +38,8 @@ function MainSection() {
 
       {/* ROW 2 */}
       <div className="
-        grid gap-3
+        grid
+        gap-2 md:gap-3
         grid-cols-1
         md:grid-cols-[1.5fr_1fr]
       ">
@@ -51,7 +56,8 @@ function MainSection() {
 
       {/* ROW 3 */}
       <div className="
-        grid gap-3
+        grid
+        gap-2 md:gap-3
         grid-cols-1
         md:grid-cols-[1fr_1.5fr]
       ">
@@ -65,17 +71,17 @@ function MainSection() {
         </Link>
 
       </div>
+      
       <div className="
-        grid gap-3
+        grid
+        gap-2 md:gap-3
         grid-cols-1
         md:grid-cols-2
       ">
 
-        
         <Link to={`/project/${projects[1].slug}`}>
           <ProjectCard {...projects[1]} type="horizontal" />
         </Link>
-
 
       </div>
 
