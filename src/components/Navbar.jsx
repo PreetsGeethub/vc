@@ -130,6 +130,17 @@ function Navbar() {
           >
             Portfolio
           </NavLink>
+          <NavLink
+            to="/blogs"
+            onClick={handlePortfolioClick}
+            className={({ isActive }) =>
+              isActive
+                ? "text-black"
+                : "text-gray-400 hover:text-black transition-colors"
+            }
+          >
+            Blogs
+          </NavLink>
 
           <NavLink
             to="/about"

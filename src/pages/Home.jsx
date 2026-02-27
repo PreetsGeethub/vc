@@ -3,6 +3,7 @@ import HeroVideo from "../components/HeroVideo"
 import Navbar from "../components/Navbar"
 import MainSection from "../components/MainSection"
 import Footer from "../components/Footer"
+import BlogList from "../components/BlogList"
 
 function Home() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function Home() {
       <Navbar />
 
       <MainSection />
+      {/* <BlogList/> */}
       <Footer />
     </>
   )

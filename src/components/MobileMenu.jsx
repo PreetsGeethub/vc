@@ -12,6 +12,11 @@ function MobileMenu({ onClose, handlePortfolioClick }) {
     window.scrollTo(0, 0) // always open from top
     onClose()
   }
+  const handleBlogClick = () => {
+    navigate("/blogs")
+    window.scrollTo(0, 0) // always open from top
+    onClose()
+  }
 
   return (
     <div
@@ -59,6 +64,16 @@ function MobileMenu({ onClose, handlePortfolioClick }) {
             Portfolio
           </li>
 
+          <li
+            onClick={handleBlogClick}
+            className={`
+              animate-slideUpSlow delay-150
+              cursor-pointer
+              ${isAbout ? "text-black" : "text-gray-400"}
+            `}
+          >
+            Blogs
+          </li>
           <li
             onClick={handleAboutClick}
             className={`
