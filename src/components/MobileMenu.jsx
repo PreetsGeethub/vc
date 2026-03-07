@@ -17,6 +17,11 @@ function MobileMenu({ onClose, handlePortfolioClick }) {
     window.scrollTo(0, 0) // always open from top
     onClose()
   }
+  const handleContactClick = () => {
+    navigate("/contact")
+    window.scrollTo(0, 0) // always open from top
+    onClose()
+  }
 
   return (
     <div
@@ -73,6 +78,16 @@ function MobileMenu({ onClose, handlePortfolioClick }) {
             `}
           >
             Blogs
+          </li>
+          <li
+            onClick={handleContactClick}
+            className={`
+              animate-slideUpSlow delay-150
+              cursor-pointer
+              ${isContact ? "text-black" : "text-gray-400"}
+            `}
+          >
+            Contact us
           </li>
           <li
             onClick={handleAboutClick}

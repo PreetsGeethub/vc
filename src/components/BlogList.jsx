@@ -3,6 +3,9 @@ import Reveal from "../components/Reveal";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ContactCTA from "./ContactCTA";
+import { blogs } from "../data/blogs";
+import FeaturedBlog from "./FeaturedBlog";
+import ContactForm from "./ContactForm";
 
 function BlogHero() {
   return (
@@ -74,14 +77,17 @@ function BlogHero() {
           
 
             <Reveal delay={50}>
-              <FeaturedPost />
+            {blogs.map((blog) => (
+  <FeaturedPost key={blog.slug} blog={blog} />
+))}
             </Reveal>
 
 
           </div>
 
         </section>
-
+        <ContactCTA/>
+        {/* <ContactForm/> */}
         {/* <ContactCTA /> */}
         <Footer />
       </div>

@@ -142,13 +142,21 @@ function Footer() {
       About VirtuCasa
     </Link>
   </li>
-
   <li>
     <Link
-      to="/project/villa"
+      to="/contact"
       className="hover:text-gray-600 hover:underline transition"
     >
-      Villa – Interior Project
+      Contact us
+    </Link>
+  </li>
+
+  {/* <li>
+    <Link
+      to="/blogs"
+      className="hover:text-gray-600 hover:underline transition"
+    >
+      Blogs
     </Link>
   </li>
 
@@ -159,7 +167,7 @@ function Footer() {
     >
       Platinum Residence
     </Link>
-  </li>
+  </li> */}
 </ul>
 
 
