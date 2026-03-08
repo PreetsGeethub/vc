@@ -104,7 +104,7 @@ function ContactCTA() {
 
           {/* WHATSAPP */}
           <a
-            href="https://wa.me/918003107826" // 🔴 replace with real number
+            href="https://wa.me/9119379443" // 🔴 replace with real number
             target="_blank"
             rel="noopener noreferrer"
             className="
