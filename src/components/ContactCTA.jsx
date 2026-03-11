@@ -64,7 +64,7 @@ function ContactCTA() {
               placeholder="Your Name"
               className="w-full border px-4 py-3 font-inter"
               required
-            />
+                            />
 
             <input
               type="email"

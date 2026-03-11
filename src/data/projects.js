@@ -20,7 +20,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Platinum Greens",
+    title: "Flats",
     slug: "Platinum",
     subtitle: "Modern Design",
     location:"jaipur",
