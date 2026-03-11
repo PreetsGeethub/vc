@@ -19,7 +19,7 @@ import emailjs from "@emailjs/browser";
  */
 export default function ContactForm({
   variant = "luxury",
-  whatsappNumber = "91XXXXXXXXXX",
+  whatsappNumber = "91193 79443",
   showWhatsapp = true,
   accentColor = "#C4975A",
   darkColor = "#1A120B",
@@ -34,10 +34,10 @@ export default function ContactForm({
     setStatus("sending");
     emailjs
       .sendForm(
-        "service_46euhkc",
-        "template_666iy3u",
+        "service_g55d2g2",
+        "template_z7qb23q",
         form.current,
-        "U0xm-PezaukQza_AW"
+        "SBwM9sjgMnYQeEZzn"
       )
       .then(() => {
         setStatus("sent");

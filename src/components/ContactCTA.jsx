@@ -11,10 +11,10 @@ function ContactCTA() {
 
     emailjs
       .sendForm(
-        "service_46euhkc",
-        "template_666iy3u",
+        "service_g55d2g2",
+        "template_z7qb23q",
         form.current,
-        "U0xm-PezaukQza_AW"  
+        "SBwM9sjgMnYQeEZzn"  
       )
       .then(
         (result) => {
