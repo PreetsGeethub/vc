@@ -474,6 +474,632 @@ export const blogs = [
       }
 
     ]
+  },
+  {
+    slug: "floating-wardrobe-cost-design-jaipur",
+
+    title: "Floating Wardrobe Cost in Jaipur + Design Ideas (Complete Guide 2026)",
+
+    coverImage: "/blogs/wardrobe/cover.jpg",
+
+    sections: [
+
+      // ── Intro ──────────────────────────────────────────────────────────────────
+      {
+        type: "paragraph",
+        text: "Floating wardrobes are redefining modern bedrooms in Jaipur. Clean-lined, elevated, and visually light — they create the illusion of more space while delivering high-end aesthetics. The designs shown reflect what today's premium homeowners prefer: neutral finishes, soft detailing, integrated functionality, and subtle lighting. If you're planning one, this guide explains everything — cost, feasibility, and design direction."
+      },
+
+      // ── What Is a Floating Wardrobe ───────────────────────────────────────────
+      { type: "heading", text: "What Is a Floating Wardrobe?" },
+      {
+        type: "paragraph",
+        text: "A floating wardrobe is wall-mounted and elevated from the floor, leaving visible space beneath."
+      },
+      { type: "paragraph", text: "In the designs shown:" },
+      {
+        type: "list",
+        items: [
+          "The wardrobes are lifted above a floating platform or storage bench",
+          "The base creates a shadow gap for visual lightness",
+          "Some include warm LED under-lighting",
+          "Many integrate seating, study desks, or open display niches"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "This combination creates both functionality and elegance."
+      },
+
+      // ── Cost Section ──────────────────────────────────────────────────────────
+      { type: "heading", text: "Floating Wardrobe Cost in Jaipur (2026 Estimate)" },
+      {
+        type: "paragraph",
+        text: "Pricing depends on finish, internal layout, hardware, and lighting."
+      },
+      {
+        type: "list",
+        items: [
+          "Matte Laminate Floating Wardrobe: ₹1,700 – ₹2,400 per sq ft",
+          "Premium Finish (PU / Veneer / Soft Pastel Tone Finishes): ₹2,600 – ₹3,800 per sq ft",
+          "With LED Lighting & Integrated Desk / Bench: ₹3,000 – ₹4,800 per sq ft",
+          "Premium Hardware (Hettich / Hafele): Adds 12–20% depending on specification"
+        ]
+      },
+      { type: "paragraph", text: "Example (Jaipur 7 ft x 8 ft Wardrobe):" },
+      {
+        type: "list",
+        items: [
+          "7 ft × 8 ft = 56 sq ft",
+          "At ₹2,800 per sq ft → Approx ₹1.56 lakh"
+        ]
+      },
+      { type: "paragraph", text: "Final costing depends on:" },
+      {
+        type: "list",
+        items: [
+          "Wall condition",
+          "Reinforcement required",
+          "Drawer configuration",
+          "Lighting integration",
+          "Finish selection"
+        ]
+      },
+
+      // ── Design Ideas ──────────────────────────────────────────────────────────
+      { type: "heading", text: "Design Ideas Based on Your Visual References" },
+
+      { type: "heading", text: "1. Soft Neutral Floating Wardrobes" },
+      { type: "image", src: "/blogs/wardrobe/neutral.jpg" },
+      { type: "image", src: "/blogs/wardrobe/neutral2.jpg" },
+      {
+        type: "paragraph",
+        text: "The cream, beige, and pastel wardrobes create calmness and visual spaciousness."
+      },
+      { type: "paragraph", text: "Why they work:" },
+      {
+        type: "list",
+        items: [
+          "They reflect natural light",
+          "They make compact bedrooms appear larger",
+          "They pair beautifully with wooden flooring"
+        ]
+      },
+      { type: "paragraph", text: "Best for: 2BHK and 3BHK Jaipur apartments." },
+
+      { type: "heading", text: "2. Floating Wardrobe with Integrated Bench" },
+      { type: "image", src: "/blogs/wardrobe/bench.jpg" },
+      {
+        type: "paragraph",
+        text: "Several designs include a floating base platform extending into seating or drawer storage."
+      },
+      { type: "paragraph", text: "Benefits:" },
+      {
+        type: "list",
+        items: [
+          "Dual functionality",
+          "Cleaner look than separate furniture",
+          "Ideal for kids' bedrooms",
+          "Adds practical storage"
+        ]
+      },
+
+      { type: "heading", text: "3. Floating Wardrobe + Study Niche" },
+      { type: "image", src: "/blogs/wardrobe/study.jpg" },
+      { type: "image", src: "/blogs/wardrobe/study-dimension.jpg" },
+      {
+        type: "paragraph",
+        text: "Modern homes require multi-functionality. The integrated study desk is perfect for compact bedrooms, teen rooms, and guest bedrooms with a work-from-home setup. This approach maximizes vertical space."
+      },
+      {
+        type: "list",
+        items: [
+          "Compact bedrooms",
+          "Teen rooms",
+          "Guest bedrooms with work-from-home setup"
+        ]
+      },
+
+      { type: "heading", text: "4. Dark Luxury Floating Wardrobe with LED Base" },
+      { type: "image", src: "/blogs/wardrobe/dark.jpg" },
+      {
+        type: "paragraph",
+        text: "The grey floating wardrobe with warm under-lighting gives a premium, dramatic feel."
+      },
+      { type: "paragraph", text: "Why it works:" },
+      {
+        type: "list",
+        items: [
+          "The floating LED strip enhances depth",
+          "Dark finishes feel luxurious",
+          "Ideal for master bedrooms"
+        ]
+      },
+
+      { type: "heading", text: "5. L-Shaped or Corner Floating Wardrobe" },
+      { type: "image", src: "/blogs/wardrobe/corner.jpg" },
+      {
+        type: "paragraph",
+        text: "The corner example optimizes dead space without visually cluttering the room."
+      },
+      { type: "paragraph", text: "Perfect for:" },
+      {
+        type: "list",
+        items: [
+          "Smaller bedrooms",
+          "Kids' rooms",
+          "Rooms with awkward layouts"
+        ]
+      },
+
+      // ── Internal Layout & Dimensions ──────────────────────────────────────────
+      { type: "heading", text: "Internal Layout & Dimensions" },
+      { type: "image", src: "/blogs/wardrobe/internal-layout.jpg" },
+      { type: "image", src: "/blogs/wardrobe/dimension-drawing.jpg" },
+      {
+        type: "paragraph",
+        text: "Understanding internal dimensions is critical to planning a functional wardrobe. A well-designed layout makes every centimetre count."
+      },
+      { type: "paragraph", text: "Key planning dimensions to consider:" },
+      {
+        type: "list",
+        items: [
+          "Standard wardrobe depth: 550 mm – 600 mm",
+          "Hanging section height: 900 mm – 1,300 mm depending on garment type",
+          "Shelf spacing: 300 mm – 450 mm per shelf",
+          "Drawer height: 150 mm – 300 mm",
+          "Open display niche: 400 mm – 500 mm height recommended",
+          "Integrated desk depth: 450 mm – 550 mm for comfortable use"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "At VirtuCasa, every internal layout is customized based on your actual wardrobe needs — clothing types, accessories, linen, and personal storage habits."
+      },
+
+      // ── Wall Suitability ──────────────────────────────────────────────────────
+      { type: "heading", text: "Is Your Wall Suitable for a Floating Wardrobe?" },
+      { type: "paragraph", text: "Floating wardrobes require:" },
+      {
+        type: "list",
+        items: [
+          "Strong RCC or brick wall",
+          "Proper anchoring system",
+          "Load distribution support",
+          "Precision installation"
+        ]
+      },
+      { type: "paragraph", text: "Not recommended for:" },
+      {
+        type: "list",
+        items: [
+          "Weak partition walls",
+          "Pure gypsum without reinforcement"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "At VirtuCasa, we conduct a site inspection before confirming feasibility."
+      },
+
+      // ── Why They Work in Jaipur ───────────────────────────────────────────────
+      { type: "heading", text: "Why Floating Wardrobes Work So Well in Jaipur Homes" },
+      { type: "paragraph", text: "Many Jaipur apartments have:" },
+      {
+        type: "list",
+        items: [
+          "Moderate bedroom sizes",
+          "Need for multifunctionality",
+          "Desire for modern aesthetics"
+        ]
+      },
+      { type: "paragraph", text: "Floating wardrobes:" },
+      {
+        type: "list",
+        items: [
+          "Make rooms look larger",
+          "Improve cleaning access",
+          "Create high-end visual appeal",
+          "Work perfectly with modern false ceiling lighting"
+        ]
+      },
+
+      // ── Why VirtuCasa ─────────────────────────────────────────────────────────
+      { type: "heading", text: "Why Clients Choose VirtuCasa" },
+      {
+        type: "paragraph",
+        text: "We don't just install wardrobes — we design engineered systems. At VirtuCasa, you get:"
+      },
+      {
+        type: "list",
+        items: [
+          "Structural feasibility assessment",
+          "3D visualization before execution",
+          "Customized internal layouts",
+          "Premium hardware selection",
+          "Professional site supervision"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "Every floating wardrobe is designed with proportion, safety, and finish precision."
+      },
+
+      // ── FAQ ───────────────────────────────────────────────────────────────────
+      { type: "heading", text: "Frequently Asked Questions" },
+
+      { type: "heading", text: "1. What is the average cost of a floating wardrobe in Jaipur?" },
+      {
+        type: "paragraph",
+        text: "The cost typically ranges between ₹1,700 to ₹4,800 per sq ft, depending on finish, hardware, lighting integration, and internal configuration. Premium finishes like PU, veneer, or LED-integrated designs cost higher than basic laminate options."
+      },
+
+      { type: "heading", text: "2. Is a floating wardrobe safe and strong?" },
+      {
+        type: "paragraph",
+        text: "Yes — when properly installed on RCC or strong brick walls. Floating wardrobes require reinforced anchoring and correct load distribution. At VirtuCasa, we assess structural feasibility before execution to ensure safety and durability."
+      },
+
+      { type: "heading", text: "3. Can floating wardrobes hold heavy clothes and storage?" },
+      {
+        type: "paragraph",
+        text: "Yes, but internal planning matters. Heavy items like winter wear or luggage must be distributed properly. Structural reinforcement and high-quality hardware are essential for long-term performance."
+      },
+
+      { type: "heading", text: "4. Are floating wardrobes suitable for small bedrooms?" },
+      {
+        type: "paragraph",
+        text: "Absolutely. Floating wardrobes make small bedrooms appear larger because the visible floor space underneath creates a sense of openness. They are ideal for 2BHK and compact Jaipur apartments."
+      },
+
+      { type: "heading", text: "5. Do floating wardrobes require special wall preparation?" },
+      {
+        type: "paragraph",
+        text: "Yes. The wall must be structurally strong. In some cases, additional internal support or backing may be required before installation. A professional site inspection is recommended."
+      },
+
+      { type: "heading", text: "6. Can I integrate lighting into a floating wardrobe?" },
+      {
+        type: "paragraph",
+        text: "Yes. LED strip lighting can be added under the base for a floating effect, inside shelves, or in open display niches. Warm lighting enhances the premium look."
+      },
+
+      { type: "heading", text: "7. How long does it take to install a floating wardrobe?" },
+      {
+        type: "paragraph",
+        text: "A standard floating wardrobe project in Jaipur typically takes 3–5 weeks, depending on design complexity, customization, and material availability."
+      },
+
+      { type: "heading", text: "8. Do you provide 3D designs before execution?" },
+      {
+        type: "paragraph",
+        text: "Yes. VirtuCasa provides 3D visualization and layout planning so you can experience your floating wardrobe before installation begins."
+      },
+
+      // ── Design Grid Infographic ───────────────────────────────────────────────
+      { type: "image", src: "/blogs/wardrobe/comparison.jpg" }
+
+    ]
+  },
+  {
+    slug: "luxury-tv-wall-designs-jaipur",
+
+    title: "Luxury TV Wall Design Ideas for Modern Living Rooms (2026 Guide)",
+
+    coverImage: "/blogs/tvwall/cover.jpg",
+
+    sections: [
+
+      // ── Intro ──────────────────────────────────────────────────────────────────
+      {
+        type: "paragraph",
+        text: "In most homes, the television wall quietly becomes the visual anchor of the living room. Yet many interiors still treat it as an afterthought — a simple panel, a cabinet, and a screen. But in contemporary homes, the TV wall is no longer just a place for electronics. It is a design feature that defines the personality of the entire living room. From textured panels to floating consoles and integrated lighting, the right TV wall can instantly elevate the room from ordinary to refined."
+      },
+      {
+        type: "paragraph",
+        text: "Let's explore some of the most compelling TV wall design directions for modern homes in 2026."
+      },
+
+      // ── Section 1: Fluted ─────────────────────────────────────────────────────
+      { type: "heading", text: "1. Fluted Panel TV Walls" },
+      { type: "image", src: "/blogs/tvwall/fluted1.jpg" },
+      { type: "image", src: "/blogs/tvwall/fluted2.jpg" },
+      { type: "image", src: "/blogs/tvwall/fluted3.jpg" },
+      {
+        type: "paragraph",
+        text: "Fluted panels have become one of the most popular TV wall elements in contemporary interiors. The vertical grooves add subtle texture while keeping the wall visually calm."
+      },
+      { type: "paragraph", text: "Why designers love fluted panels:" },
+      {
+        type: "list",
+        items: [
+          "They create depth without heavy decoration",
+          "They work beautifully with warm lighting",
+          "They pair well with wood, marble, and matte finishes"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "Fluted panels are especially effective in modern apartments where the living room needs visual richness without clutter."
+      },
+
+      // ── Section 2: Marble ─────────────────────────────────────────────────────
+      { type: "heading", text: "2. Marble Feature TV Walls" },
+      { type: "image", src: "/blogs/tvwall/marble1.jpg" },
+      { type: "image", src: "/blogs/tvwall/marble2.jpg" },
+      { type: "image", src: "/blogs/tvwall/marble3.jpg" },
+      {
+        type: "paragraph",
+        text: "For homeowners seeking timeless luxury, marble TV walls remain unmatched. Large stone slabs introduce natural texture and sophistication. When combined with warm lighting and minimal furniture, the effect is effortlessly elegant."
+      },
+      { type: "paragraph", text: "Common choices include:" },
+      {
+        type: "list",
+        items: [
+          "Italian marble",
+          "Onyx panels",
+          "Engineered stone slabs"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "These designs work particularly well in larger living rooms and villa interiors."
+      },
+
+      // ── Section 3: Floating Console ───────────────────────────────────────────
+      { type: "heading", text: "3. Floating TV Console Designs" },
+      { type: "image", src: "/blogs/tvwall/floating1.jpg" },
+      { type: "image", src: "/blogs/tvwall/floating2.jpg" },
+      { type: "image", src: "/blogs/tvwall/floating3.jpg" },
+      {
+        type: "paragraph",
+        text: "Floating consoles bring a sense of lightness to the room. Because they are lifted from the floor, they visually enlarge the space and create a cleaner appearance."
+      },
+      { type: "paragraph", text: "Design advantages include:" },
+      {
+        type: "list",
+        items: [
+          "Easier floor cleaning",
+          "Sleeker look compared to bulky cabinets",
+          "Opportunity for subtle LED lighting underneath"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "Floating consoles pair beautifully with minimal TV panels or textured wall finishes."
+      },
+
+      // ── Section 4: Backlit ────────────────────────────────────────────────────
+      { type: "heading", text: "4. Backlit TV Wall Panels" },
+      { type: "image", src: "/blogs/tvwall/backlit1.jpg" },
+      { type: "image", src: "/blogs/tvwall/backlit2.jpg" },
+      { type: "image", src: "/blogs/tvwall/backlit3.jpg" },
+      {
+        type: "paragraph",
+        text: "Lighting can dramatically transform a TV wall. Backlit panels create a soft halo effect that adds depth and warmth to the space."
+      },
+      { type: "paragraph", text: "Typical lighting techniques include:" },
+      {
+        type: "list",
+        items: [
+          "LED strip behind marble panels",
+          "Cove lighting above the TV panel",
+          "Soft wall washers to highlight textures"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "The result is a TV wall that feels architectural rather than decorative."
+      },
+
+      // ── Section 5: Minimal Architectural ─────────────────────────────────────
+      { type: "heading", text: "5. Minimal Architectural TV Walls" },
+      { type: "image", src: "/blogs/tvwall/minimal1.jpg" },
+      { type: "image", src: "/blogs/tvwall/minimal2.jpg" },
+      { type: "image", src: "/blogs/tvwall/minimal3.jpg" },
+      {
+        type: "paragraph",
+        text: "In many modern homes, the most luxurious design is also the simplest. Architectural TV walls rely on clean geometry, recessed niches, integrated lighting, and balanced proportions."
+      },
+      { type: "paragraph", text: "Architectural TV walls rely on:" },
+      {
+        type: "list",
+        items: [
+          "Clean geometry",
+          "Recessed niches",
+          "Integrated lighting",
+          "Balanced proportions"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "Instead of adding elements, these designs focus on precision and restraint. They work beautifully in interiors with magnetic track lighting and minimal false ceilings."
+      },
+
+      // ── Cost Section ──────────────────────────────────────────────────────────
+      { type: "heading", text: "TV Wall Design Cost in Jaipur (2026)" },
+      {
+        type: "paragraph",
+        text: "Costs vary based on material, paneling, and lighting integration."
+      },
+      { type: "paragraph", text: "Typical ranges:" },
+      {
+        type: "list",
+        items: [
+          "Basic laminate panel wall: ₹12,000 – ₹25,000",
+          "Fluted panel feature wall: ₹25,000 – ₹60,000",
+          "Marble or stone feature wall: ₹60,000 – ₹1.5 lakh",
+          "Premium architectural TV wall with lighting: ₹80,000 – ₹2 lakh+"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "Final pricing depends on size, finish selection, and storage requirements."
+      },
+
+      // ── Common Mistakes ───────────────────────────────────────────────────────
+      { type: "heading", text: "Common TV Wall Mistakes to Avoid" },
+      {
+        type: "paragraph",
+        text: "Even beautiful materials can fail if the design is poorly planned."
+      },
+      { type: "paragraph", text: "Avoid:" },
+      {
+        type: "list",
+        items: [
+          "Oversized cabinets that dominate the room",
+          "Poor wire management",
+          "Too many materials on one wall",
+          "Harsh white lighting around the TV"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "A TV wall should feel balanced, calm, and integrated with the rest of the living room."
+      },
+
+      // ── How to Upgrade ────────────────────────────────────────────────────────
+      { type: "heading", text: "How to Turn an Average TV Wall into a Luxury Feature Wall" },
+      {
+        type: "paragraph",
+        text: "Many homes already have a basic TV panel or a simple cabinet wall. But with a few thoughtful upgrades, that ordinary panel can become the most striking feature of the living room. At VirtuCasa, we often transform standard TV units into refined design elements without completely rebuilding the wall."
+      },
+
+      { type: "heading", text: "1. Introduce Architectural Lighting" },
+      {
+        type: "paragraph",
+        text: "Lighting is one of the simplest ways to upgrade a TV wall. Instead of direct spotlights, we introduce soft hidden LED lighting behind panels or within ceiling coves. This creates a subtle glow that highlights textures and gives the wall depth. The result is a TV wall that feels warm and layered rather than flat."
+      },
+
+      { type: "heading", text: "2. Add Texture Behind the TV" },
+      {
+        type: "paragraph",
+        text: "A plain painted wall often makes the TV look like a dark rectangle floating in space. We introduce textured surfaces to add visual interest while keeping the design elegant and restrained."
+      },
+      {
+        type: "list",
+        items: [
+          "Fluted wood panels",
+          "Stone or marble slabs",
+          "Microcement finishes",
+          "Fabric panels"
+        ]
+      },
+
+      { type: "heading", text: "3. Upgrade the Console to a Floating Design" },
+      {
+        type: "paragraph",
+        text: "Traditional TV cabinets often feel bulky and heavy. Replacing them with a floating console immediately makes the wall look lighter and more contemporary. When combined with under-console lighting, the unit appears to hover above the floor. This small change dramatically improves the visual balance of the living room."
+      },
+
+      { type: "heading", text: "4. Introduce Premium Materials" },
+      {
+        type: "paragraph",
+        text: "Luxury interiors are often defined by materials. Instead of standard laminates, we may use premium alternatives that add subtle richness without making the design overly decorative."
+      },
+      {
+        type: "list",
+        items: [
+          "Wood veneer finishes",
+          "Natural stone tops",
+          "Quartz or sintered stone slabs",
+          "Matte PU painted panels"
+        ]
+      },
+
+      { type: "heading", text: "5. Improve Proportion and Balance" },
+      {
+        type: "paragraph",
+        text: "Many TV walls fail simply because elements are poorly aligned. We carefully study every dimension before finalising the design."
+      },
+      {
+        type: "list",
+        items: [
+          "TV size and viewing distance",
+          "Console width",
+          "Wall panel proportions",
+          "Ceiling lighting alignment"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "When proportions are correct, even simple designs begin to look sophisticated."
+      },
+
+      // ── VirtuCasa Approach ────────────────────────────────────────────────────
+      { type: "heading", text: "The VirtuCasa Approach" },
+      {
+        type: "paragraph",
+        text: "At VirtuCasa, we believe a TV wall should not be treated as a standalone element. It must work in harmony with the rest of the living room."
+      },
+      { type: "paragraph", text: "We therefore coordinate the TV wall with:" },
+      {
+        type: "list",
+        items: [
+          "Ceiling design",
+          "Lighting layout",
+          "Furniture placement",
+          "Wall paneling",
+          "Overall material palette"
+        ]
+      },
+      {
+        type: "paragraph",
+        text: "This integrated approach ensures the final space feels cohesive rather than pieced together."
+      },
+
+      // ── Before/After Infographic ──────────────────────────────────────────────
+      { type: "image", src: "/blogs/tvwall/comparison.png" },
+
+      // ── 5 Signs ───────────────────────────────────────────────────────────────
+      { type: "heading", text: "5 Signs Your TV Wall Needs a Redesign" },
+      {
+        type: "paragraph",
+        text: "Sometimes a living room feels unfinished even after the furniture and paint are complete. In many homes, the issue lies with the TV wall."
+      },
+
+      { type: "heading", text: "1. The TV Looks Like It's Floating on a Plain Wall" },
+      {
+        type: "paragraph",
+        text: "A television mounted on a plain wall often looks disconnected from the rest of the room. Without a proper panel, texture, or lighting, the screen becomes a dark rectangle that disrupts the visual harmony of the space. A well-designed TV wall integrates the screen into a larger composition."
+      },
+
+      { type: "heading", text: "2. The TV Cabinet Feels Bulky" },
+      {
+        type: "paragraph",
+        text: "Many homes still have large floor-mounted TV cabinets. These can make the room feel crowded and outdated. Replacing them with a floating console immediately creates a cleaner and more contemporary appearance."
+      },
+
+      { type: "heading", text: "3. There Is No Lighting Around the TV Wall" },
+      {
+        type: "paragraph",
+        text: "Lighting is one of the most overlooked aspects of TV wall design. Without subtle backlighting or ambient lighting, the wall can appear flat and lifeless — especially at night when the living room lighting is dim."
+      },
+
+      { type: "heading", text: "4. The Wall Feels Visually Empty" },
+      {
+        type: "paragraph",
+        text: "A TV wall should act as a visual anchor for the living room. If the wall feels empty or unfinished, adding textures such as fluted panels, stone finishes, or architectural niches can create a stronger focal point."
+      },
+
+      { type: "heading", text: "5. The Design Doesn't Match the Rest of the Room" },
+      {
+        type: "paragraph",
+        text: "In some homes, the TV wall looks completely different from the rest of the interior style. A modern living room paired with an outdated TV unit can break the visual flow of the space. A well-designed wall ties together the furniture, ceiling, lighting, and materials."
+      },
+
+      // ── Closing ───────────────────────────────────────────────────────────────
+      { type: "heading", text: "A Small Upgrade Can Transform the Entire Room" },
+      {
+        type: "paragraph",
+        text: "Many homeowners assume upgrading a TV wall requires a complete renovation. In reality, thoughtful changes — like adding texture, lighting, or a floating console — can dramatically elevate the space. With the right design approach, the TV wall can become the most refined feature of your living room."
+      },
+      {
+        type: "paragraph",
+        text: "If your living room feels incomplete, the solution might simply be a better-designed TV wall."
+      }
+
+    ]
   }
 
 ];
