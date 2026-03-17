@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { blogs } from "../data/blogs";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-
 function BlogDetailPage() {
   const { slug } = useParams();
   const blog = blogs.find((b) => b.slug === slug);
@@ -13,6 +12,9 @@ function BlogDetailPage() {
   }, [slug]);
 
   if (!blog) return <h1 className="p-10">Blog not found</h1>;
+  useEffect(() => {
+    document.title = blog.title;
+  }, [blog]);
 
   return (
     <>
