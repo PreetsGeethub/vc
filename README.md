@@ -10,7 +10,7 @@ A production-ready portfolio website built for an interior design and custom fur
 - Vercel (Deployment)
 
 ## Features
-- Cinematic hero video section
+- Cinematic hero video  section
 - Dynamic project pages
 - Responsive design (mobile-first)
 - SEO optimized (meta tags, sitemap, robots.txt)
